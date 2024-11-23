@@ -1,0 +1,104 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8ff; /* Light pastel blue-gray */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+/* App Container */
+div {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffff; /* White for contrast */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Header */
+h1 {
+  color: #5c6784; /* Subtle pastel blue-gray */
+  font-size: 1.8em;
+  margin: 0;
+}
+
+/* Input Section */
+input {
+  width: 70%;
+  padding: 10px;
+  border: 2px solid #a8dadc; /* Pastel blue-green */
+  border-radius: 8px;
+  outline: none;
+  font-size: 1em;
+  background-color: #f1faee; /* Light pastel green */
+  color: #457b9d; /* Muted blue for text */
+}
+
+input::placeholder {
+  color: #a8dadc;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffcad4; /* Soft pastel pink */
+  color: #6d6875; /* Muted mauve */
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #fec5bb; /* Slightly darker pastel pink */
+}
+
+/* Task List */
+.task-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0; /* Ensure no extra space is added */
+  padding: 0; /* Ensure no extra space is added */
+}
+
+/* Task Items */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #edf6f9; /* Pastel blue-green */
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0; /* Ensure no extra space is added */
+}
+
+.task-item span {
+  font-size: 1em;
+  color: #1d3557; /* Darker muted blue */
+}
+
+.task-item button {
+  padding: 5px 10px;
+  background-color: #ffadad; /* Pastel red */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-item button:hover {
+  background-color: #e63946; /* Slightly darker red */
+}
